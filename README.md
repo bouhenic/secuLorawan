@@ -5,6 +5,9 @@ Ce dépôt traite de la sécurité du LORAWAN
 Ouverture d'une socket serveur (côté serveur) UDP et demande de connexion (côté client). La donnée envoyée est un PHY payload (couche Lora MAC). Le Frame payload est chiffré à l'aide de l'appskey, un mic est calculé pour l'authentification à l'aide de la NwksKey. Le client récupère la trame, vérifie le mic, extrait le Frame payload et le déchiffre.
 Le code javascript utilise la librairie lora-packet.
 
+### TOPOLOGIE :
+![Alt text](topo.svg)
+
 ### EXEMPLE DE PHY PAYLOAD GÉNÉRÉ :
 ![Alt text](trame2.png)
 
