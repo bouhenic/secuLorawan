@@ -19,6 +19,6 @@ Ouverture d'une socket serveur (côté serveur) UDP et demande de connexion (cô
 - FPort: Le port de la trame, indiquant à quel port d'application la charge utile du message est destinée.
 - payload: La charge utile du message, ici fournie par l'utilisateur et convertie en Buffer depuis une entrée (userInput) codée en chaîne de caractères ou en hexadécimal.
 
-![Alt text](trame.png)
+![Alt text](loratrame.svg)
 ### DIAGRAMME DE SÉQUENCE :
 ![Alt text](seqlorasocket.svg)
