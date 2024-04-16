@@ -27,3 +27,6 @@ Le code javascript utilise la librairie lora-packet.
 ![Alt text](loratrame.svg)
 ### DIAGRAMME DE SÉQUENCE :
 ![Alt text](seqlorasocket.svg)
+
+## TEST ARP SPOOFING ENTRE UNE PASSERELLE ET UN SERVEUR LORAWAN
+Cette manipulation présente une attaque de type arp spoofing entre une passerelle et un serveur LoraWan. Son objectif est de déchiffrer un message transmis depuis un device LoraWan. Il faut bien sûr connaitre le NwkSkey, l'AppSkey et le devAddr du device (Données qui doivent rester confidentielles). Un script python "sniffe" le réseau et filtre les payload chiffrés correspondant à un DevAddr connu. Il convertit le payload de base64 à hexadécimal et transmet à travers une socket udp le message chiffré vers un script nodejs qui déchiffrera le message. Ce script utilise la librairie Lora-packet pour déchiffrer le message.
