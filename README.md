@@ -33,3 +33,7 @@ Cette manipulation présente une attaque de type arp spoofing entre une passerel
 
 ### TOPOLOGIE DU TP :
 ![Alt text](secuLorawan-3.drawio.svg)
+
+### DIAGRAMME DE SÉQUENCE DU TP :
+![Alt text](seqTpsecuLora.svg)
+
